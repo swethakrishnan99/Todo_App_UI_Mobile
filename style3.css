@@ -1,0 +1,61 @@
+.background {
+  box-sizing: border-box;
+  background-size: 90vw 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: blur(10px);
+  height: 95.5vh;
+  width: 97.5vw;
+  display: flex;
+  align-items: center;
+  font-family: "roboto", sans-serif;
+}
+.background1 {
+  background-image: url(images/tasklist.png);
+}
+.background2 {
+  background-image: url(images/paris.png);
+}
+.container {
+  width: 80vw;
+  height: 180px;
+  border: 1px solid red;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgb(172, 170, 170);
+  text-align: center;
+  margin: auto;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 20px 0 0 0;
+  color: red;
+}
+.listname {
+  border: 1px solid red;
+  height: 25px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+a {
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  padding: 5px 25px 5px 25px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+@media screen and (min-width: 600px) {
+  .background {
+    background-size: 500px 800px;
+  }
+  .container {
+    width: 500px;
+    height: 250px;
+  }
+  .listname {
+    margin: 40px 0;
+  }
+}

@@ -1,0 +1,92 @@
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+}
+.heading.bold {
+  font-size: 10vw;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.back {
+  font-size: 10vw;
+  color: red;
+}
+.container {
+  margin: 40px auto auto auto;
+  border: 1px solid tomato;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgb(172, 170, 170);
+  width: 75vw;
+  height: 50vh;
+}
+.list_name {
+  font-size: 7vw;
+  color: red;
+  font-weight: 300;
+}
+hr {
+  margin-left: 20vw;
+}
+.completed_task {
+  color: red;
+  font-size: 5vw;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+.pending_task {
+  float: left;
+  margin-top: 3vh;
+  font-size: 6vw;
+  margin-bottom: 6vh;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-left: 5vw;
+  margin-right: 2vw;
+}
+.add {
+  position: absolute;
+  top: 70vh;
+  font-size: 10vw;
+  color: red;
+}
+@media screen and (min-width: 600px) {
+  body {
+    margin-top: 100px;
+  }
+  .heading.bold {
+    font-size: 64px;
+  }
+  .back {
+    font-size: 50px;
+  }
+  .container {
+    width: 400px;
+    height: 500px;
+  }
+  .list_name {
+    font-size: 40px;
+  }
+  .completed_task {
+    font-size: 35px;
+  }
+  .pending_task {
+    font-size: 35px;
+  }
+  .checkbox {
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  .add {
+    font-size: 50px;
+    position: relative;
+    top: 150px;
+  }
+  hr {
+    margin-left: 100px;
+  }
+}
