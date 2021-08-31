@@ -1,54 +1,117 @@
 body {
+  font-family: "roboto", sans-serif;
+}
+#head {
   text-align: center;
-  margin: 50px auto 0 auto;
-  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
 }
 .heading {
-  margin: 10px 10px 40px auto;
+  font-size: 60px;
 }
 .heading.bold {
-  font-family: "Roboto", sans-serif;
-  font-size: 64px;
   font-weight: 700;
 }
 .heading.thin {
-  font-family: "Roboto", sans-serif;
-  font-size: 64px;
-  font-weight: 100;
-  color: rgb(85, 83, 83);
+  font-weight: 300;
+  color: rgb(110, 110, 110);
+}
+#new_list {
+  text-decoration: none;
+  padding-top: 40px;
 }
 .add {
-  font-size: 45px;
+  font-size: 40px;
   color: red;
-  padding-left: 20px;
 }
-.box {
-  max-width: 500px;
-  width: 75vw;
-  padding: 15px 0 15px 20px;
-  margin: 20px auto 20px auto;
-  border: 1px solid tomato;
-  text-align: left;
+#new_list .thin {
+  color: black;
+  font-size: 40px;
+  font-weight: 100;
+  padding-left: 10px;
+}
+#content {
+  margin: 0 13vw;
+  padding-left: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.list_box {
+  width: 250px;
+  height: 350px;
+  margin: 20px 50px;
+  border: 1px solid red;
   border-radius: 20px;
-  box-shadow: 5px 5px 10px rgb(172, 170, 170);
+  box-shadow: 8px 8px 15px rgb(172, 170, 170);
 }
-.link {
-  color: rgb(160, 158, 158);
+.title.thin {
+  color: red;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+a {
   text-decoration: none;
-  font-size: 20px;
 }
-@media only screen and (max-width: 450px) {
+hr {
+  margin-left: 50px;
+}
+.complete_task {
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: line-through;
+  text-align: center;
+  margin-bottom: 25px;
+}
+label {
+  font-size: 22px;
+}
+label > input {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px 0 20px;
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  #content {
+    margin: 0 10vw;
+    padding-left: 5vw;
+  }
+}
+@media screen and (max-width: 1000px) {
   .heading {
-    padding-right: 5px;
-  }
-  .heading.bold {
     font-size: 40px;
   }
-  .heading.thin {
-    font-size: 40px;
+  #new_list {
+    padding-top: 20px;
   }
-  .add {
-    font-size: 35px;
-    padding-left: 10px;
+  #content {
+    padding-left: 0;
+  }
+  #new_list .thin {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+  .complete_task {
+    display: none;
+  }
+  label {
+    display: none;
+  }
+  .list_box {
+    max-width: 400px;
+    width: 95vw;
+    height: 50px;
+    padding: 10px 10px;
+    margin: 10px auto 10px auto;
+  }
+  .title.thin {
+    margin: 0;
+    padding-top: 8px;
+    text-align: left;
+    color: rgb(160, 158, 158);
+    font-size: 25px;
   }
 }

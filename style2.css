@@ -1,92 +1,98 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto", sans-serif;
   text-align: center;
-  margin-top: 15vh;
-  display: flex;
-  flex-direction: column;
 }
-.heading.bold {
-  font-size: 10vw;
-  font-weight: 700;
-  margin-left: 10px;
+.head.bold {
+  font-size: 60px;
+  margin-bottom: 0;
+  background-color: white;
+  display: inline-block;
+}
+.head > a {
+  text-decoration: none;
+  font-size: 40px;
+  color: red;
 }
 .back {
-  font-size: 10vw;
-  color: red;
+  color: rgb(114, 112, 112);
+  margin-left: 20px;
 }
-.container {
-  margin: 40px auto auto auto;
-  border: 1px solid tomato;
+#head_line {
+  position: relative;
+  top: 85px;
+  border: 2px solid black;
+  z-index: -1;
+  margin: 0 25vw;
+}
+.hidden {
+  display: none;
+}
+#big_box {
+  width: 450px;
+  height: 450px;
+  border: 1px solid red;
   border-radius: 20px;
-  box-shadow: 5px 5px 10px rgb(172, 170, 170);
-  width: 75vw;
-  height: 50vh;
+  box-shadow: 8px 8px 15px rgb(172, 170, 170);
+  margin: 50px auto;
 }
-.list_name {
-  font-size: 7vw;
+.thin {
   color: red;
+  font-size: 35px;
   font-weight: 300;
 }
-hr {
-  margin-left: 20vw;
+.underline {
+  margin-left: 150px;
 }
-.completed_task {
+.complete_task {
   color: red;
-  font-size: 5vw;
-  font-weight: 700;
   text-decoration: line-through;
+  font-size: 25px;
+  font-weight: 700;
 }
-.pending_task {
-  float: left;
-  margin-top: 3vh;
-  font-size: 6vw;
-  margin-bottom: 6vh;
-}
-.checkbox {
+input {
   width: 20px;
   height: 20px;
-  margin-left: 5vw;
-  margin-right: 2vw;
+  margin: 30px 10px 0 40px;
 }
-.add {
-  position: absolute;
-  top: 70vh;
-  font-size: 10vw;
+label {
+  font-size: 25px;
+  float: left;
+}
+#big_box > a {
   color: red;
+  position: relative;
+  top: 200px;
+  left: 50px;
 }
-@media screen and (min-width: 600px) {
-  body {
-    margin-top: 100px;
+@media screen and (max-width: 600px) {
+  .hidden {
+    display: inline-block;
+    color: red;
+    font-size: 40px;
+    padding: 20px 5px;
   }
-  .heading.bold {
-    font-size: 64px;
+  .head {
+    display: none;
   }
-  .back {
-    font-size: 50px;
-  }
-  .container {
-    width: 400px;
-    height: 500px;
-  }
-  .list_name {
+  .head.bold {
     font-size: 40px;
   }
-  .completed_task {
-    font-size: 35px;
+  #head_line {
+    display: none;
   }
-  .pending_task {
-    font-size: 35px;
+  #heading {
+    display: flex;
+    justify-content: center;
   }
-  .checkbox {
-    margin-left: 30px;
-    margin-right: 20px;
+  #big_box {
+    width: 300px;
+    height: 350px;
   }
-  .add {
-    font-size: 50px;
-    position: relative;
-    top: 150px;
+  .underline {
+    margin-left: 60px;
   }
-  hr {
-    margin-left: 100px;
+  #big_box > a {
+    top: 100px;
+    left: 5px;
   }
 }
